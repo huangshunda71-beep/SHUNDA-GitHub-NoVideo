@@ -1,0 +1,8 @@
+@font-face{font-family:Pacifico;src:url('../assets/fonts/pacifico-regular.ttf') format('truetype');font-weight:400;font-display:block}
+.preloader{position:fixed;inset:0;width:100%;height:100svh;background:#000;color:#fff;z-index:20000;overflow:hidden;pointer-events:auto;--loader-scale:min(100vw / 1920,100svh / 1080)}
+.loader-writing{position:absolute;left:50%;top:50%;width:min(32.448vw,57.685svh);aspect-ratio:623 / 371;transform:translate(-50%,-50%);overflow:visible}
+.loader-percent{position:absolute;right:1.51vw;bottom:1.667svh;margin:0;font:400 min(4.167vw,7.407svh)/1.45 Dela,sans-serif;text-align:right;white-space:nowrap;visibility:hidden}
+.preloader[data-fonts=ready] .loader-percent{visibility:visible}
+.loader-bar{position:absolute;left:0;bottom:0;width:100%;height:1.667svh;background:#F9D927;transform:scaleX(0);transform-origin:left center}
+.is-loading .navbar,.is-loading .hero{pointer-events:none}
+@media(max-width:700px) and (orientation:portrait){.loader-writing{width:80vw}.loader-percent{font-size:10vw;right:5vw;bottom:3svh}.loader-bar{height:1.2svh}}
